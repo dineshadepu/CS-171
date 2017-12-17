@@ -5,7 +5,7 @@ Inputs a single txt file representing transformations and outputting
 the overall transformation matrix product inverted using Eigen.
 
 Author: Eshan Govil
-Assignment: Hw 0, part 1
+Assignment: Hw 0, part 2
 *************************************************************************/
 
 #include <iostream>
