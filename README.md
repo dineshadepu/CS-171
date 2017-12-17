@@ -21,7 +21,7 @@ For Mac and other distributions of Linux, you will need to find the installation
 ### You can test your OpenGL installation using the OpenGL demo.
 Inside the OpenGL_demo folder, run Make and execute ./opengl_demo. You can then test the following:
 
-Clicking in the window with the left-mouse button and dragging the mouse around rotates your view of the scene in the direction you drag. Note that you cannot rotate your view up or down vertically more than 90 degrees. This mouse interaction scheme is supposed to mimic a real-life first-person-view of a scene, and of course, in real life, our heads cannot rotate vertically more than about 90 degrees.
-Pressing the w, s, a, and d keys on your keyboard moves your view of the scene forward, backward, to the right, and to the left respectively. As you move away from the cubes, parts of the cubes will disappear into the black distance. If you move far enough, you may go off the blue ground and find yourself floating in black space. You can also move through the cubes.
-Pressing the q key quits the program.
-Pressing the t key on your keyboard toggles the cubes back and forth from being solid to “wireframes” as shown below:
+- Clicking in the window with the left-mouse button and dragging the mouse around rotates your view of the scene in the direction you drag. Note that you cannot rotate your view up or down vertically more than 90 degrees. This mouse interaction scheme is supposed to mimic a real-life first-person-view of a scene, and of course, in real life, our heads cannot rotate vertically more than about 90 degrees.
+- Pressing the w, s, a, and d keys on your keyboard moves your view of the scene forward, backward, to the right, and to the left respectively. As you move away from the cubes, parts of the cubes will disappear into the black distance. If you move far enough, you may go off the blue ground and find yourself floating in black space. You can also move through the cubes.
+- Pressing the q key quits the program.
+- Pressing the t key on your keyboard toggles the cubes back and forth from being solid to “wireframes” as shown below:
