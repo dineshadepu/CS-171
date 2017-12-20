@@ -1,6 +1,8 @@
 # CS-171
 ## Caltech Computer Graphics Lab with Professor Alan Barr
 
+Final Grade received: A
+
 You will need to use a unix-based operating system to run this code, such as Mac OS or Linux. I have a Mac OS but I set up and ran a Ubuntu 14.04 Linux VM since Linux allows easy installation of required versions of OpenGL and ImageMagick.
 
 ### Installing g++ on Ubuntu Linux:
