@@ -1,0 +1,214 @@
+help stop
+behavior:           exits the program. does not save progress. same behavior as
+                    ctrl+c
+expected arguments: [NONE]
+
+
+
+help info
+behavior:           displays information on active Renderables. if no Renderable
+                    is specified scene information is displayed instead.
+expected arguments: [Renderable Name(s)]
+
+NOTE: passing 'all' as an argument will display scene information.
+passing 'selected' as an argument will display information on currently selected
+Renderable
+
+
+
+help interact
+behavior:           temporarily disables commandline and enables mouse and
+                    interaction with the display. press q or esc at the display
+                    to return to commandline.
+expected arguments: [NONE]
+
+
+
+help source
+behavior:           loads a scene stored in a .scn file. if no file is
+                    specified, searches for data/quicksave.scn instead. if no
+                    file can be found and loaded, no action is taken.
+expected arguments: [filename]
+
+NOTE: loading a file will clear all current scene information. make sure to save
+any progress before loading a scene
+
+
+
+help save
+behavior:           saves the current scene into a .scn file in the data
+                    directory. if no filename is specified, the current scene is
+                    saved into data/quicksave.scn
+expected arguments: [filename]
+
+NOTE: saving to a pre-existing file will overwrite the data
+
+
+
+help deselect
+behavior:           removes any Renderable selection. will not affect the scene
+expected arguments: [NONE]
+
+
+
+help Primitive
+behavior:           selects a Primitive generating one if one with the given
+                    name does not exist yet
+expected arguments: [name]
+
+NOTE: all Renderables share the same name pool which means that primitives and
+objects cannot have the same names
+
+
+
+help setCoeff
+behavior:           sets the scaling coefficients of the currently selected
+                    primitive. must have a primitive selected
+expected arguments: [x] [y] [z] (all args must be non negative numeric values)
+
+
+
+help setExponent
+behavior:           sets the exponents of the currently selected primitive. must
+                    have a primitive selected
+expected arguments: [e] [n] (all args must be non negative numeric values
+
+
+
+help setPatch
+behavior:           sets the patch count of the currently selected primitive.
+                    must have a primitive selected
+expected arguments: [longitudinal patch count] [latitudinal patch count] (all
+                    args must be non negative integral values)
+
+
+
+help setColor
+behavior:           sets the color of the currently selected primitive. must
+                    a primitive selected
+expected arguments: [r] [g] [b] (all args must be numeric values between 0.0 and
+                    1.0 (inclusive))
+
+
+
+help setAmbient
+behavior:           sets the ambient color scale of the currently selected
+                    primitive. must have a primitive selected
+expected arguments: [a] (a single numeric value between 0.0 and 1.0 (inclusive)
+
+
+
+help setReflected
+behavior:           sets the reflected color scale of the currently selected
+                    primitive. must have a primitive selected
+expected arguments: [r] (a single numeric value between 0.0 and 1.0 (inclusive)
+
+
+
+help setRefracted
+behavior:           sets the refracted color scale of the currently selected
+                    primitive. must have a primitive selected
+expected arguments: [r] (a single numeric value between 0.0 and 1.0 (inclusive)
+
+
+
+help setGloss
+behavior:           sets the gloss color scale of the currently selected
+                    primitive. must have a primitive selected
+expected arguments: [g] (a single numeric value between 0.0 and 1.0 (inclusive)
+
+
+
+help setDiffuse
+behavior:           sets the diffuse color scale of the currently selected
+                    primitive. must have a primitive selected
+expected arguments: [d] (a single numeric value between 0.0 and 1.0 (inclusive)
+
+
+
+help setSpecular
+behavior:           sets the specular color scale of the currently selected
+                    primitive. must have a primitive selected
+expected arguments: [s] (a single numeric value between 0.0 and 1.0 (inclusive)
+
+
+
+help Object
+behavior:           selects an Object generating one if one with the given
+                    name does not exist yet
+expected arguments: [name]
+
+NOTE: all Renderables share the same name pool which means that primitives and
+objects cannot have the same names
+
+
+
+help translateAll
+behavior:           applies a translation to the currently selected object. must
+                    have an Object selected
+expected arguments: [x] [y] [z] (all args must be numeric values)
+
+
+
+help rotateAll
+behavior:           applies a rotation to the currently selected object. must
+                    have an Object selected
+expected arguments: [x] [y] [z] [theta] (all args must be numeric values and
+                    theta is in degrees)
+
+NOTE: the axis given by [x] [y] [z] does not have to be normalized
+
+
+
+help scaleAll
+behavior:           applies a scaling transformation to the currently selected
+                    object. must have an Object selected
+expected arguments: [x] [y] [z] (all args must be numeric values)
+
+
+
+help addObject
+behavior:           adds a child Object to the currently selected Object. must
+                    have an Object selected
+expected arguments: [name]
+
+
+
+help addPrimitive
+behavior:           adds a child Primitive to the currently selected Object.
+                    must have an Object selected
+expected arguments: [name]
+
+
+
+help setCursor
+behavior:           sets child cursor of the currently selected Object. must
+                    have an Object selected
+expected arguments: [name]
+
+
+
+help translate
+behavior:           applies a translation to the child pointed to by the cursor
+                    of the currently selected Object. must have an Object with
+                    at least one child selected
+expected arguments: [x] [y] [z]
+
+
+
+help rotate
+behavior:           applies a rotation to the child pointed to by the cursor of
+                    the currently selected Object. must have an Object with at
+                    least one child selected
+expected arguments: [x] [y] [z] [theta] (all args must be numeric values and
+                    theta is in degrees)
+
+NOTE: the axis given by [x] [y] [z] does not have to be normalized
+
+
+
+help scale
+behavior:           applies a scaling transformation to the child pointed to by
+                    the cursor of the currently selected Object. must have an
+                    Object with at least one child selected
+expected arguments: [x] [y] [z]

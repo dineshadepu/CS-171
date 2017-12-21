@@ -1,0 +1,16 @@
+prm test
+obj test_o
+ap test
+xs 1 1 1
+ss 1 2 1
+xall 3 0 0
+obj test_o2
+ao test_o
+xs -1 -1 -1
+xall -2 0 0
+obj test_o3
+ap test
+xs -3 0 0
+obj test_o2
+ao test_o3
+xs 0.4 0.3 0.1

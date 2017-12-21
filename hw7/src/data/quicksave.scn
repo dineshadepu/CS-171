@@ -1,0 +1,10 @@
+prm test_prm
+coeff 2.0 1. 1
+patch 100 100
+color 1.0 0.2 0.2
+specular 0.5
+prm test_prm2
+prm test_prm3
+patch 100 100
+exp 0.1 0.1
+obj test_obj

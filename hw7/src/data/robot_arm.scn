@@ -1,0 +1,264 @@
+Primitive long_part_of_jaw
+Coeff 0.2 0.1 0.5 
+Exponent 0.1 0.1 
+Patch 10 10 
+reflected 0.2 
+surface 1 1 1 
+gloss 0.15 
+diffuse 0.9 
+specular 0.1 
+Primitive short_part_of_jaw
+Coeff 0.2 0.2 0.1 
+Exponent 0.1 0.1 
+Patch 10 10 
+reflected 0.2 
+surface 1 1 1 
+gloss 0.15 
+diffuse 0.9 
+specular 0.1 
+Primitive elliptical_head 
+Coeff 0.45 0.8 0.3 
+Exponent 0.8 0.1 
+Patch 20 20 
+surface 0.6 0.6 1 
+gloss 0.07 
+diffuse 0.4 
+specular 0.6 
+Primitive cylindrical_part_of_arm
+Coeff 0.3 0.3 2 
+Exponent 0.8 0.1 
+Patch 20 20 
+reflected 0.2 
+surface 1 1 1 
+gloss 0.03 
+diffuse 0.4 
+specular 0.6 
+Primitive small_ball
+Coeff 0.1 0.1 0.1 
+Exponent 1 1 
+Patch 20 20 
+surface 0.9 0.9 0.9 
+gloss 0.15 
+diffuse 0.9 
+specular 0.1 
+Primitive rectangular_part_of_arm
+Coeff 0.4 0.4 2 
+Exponent 0.1 0.1 
+Patch 20 20 
+reflected 0.2 
+surface 0.9 0.9 0.9 
+gloss 0.03 
+diffuse 0.4 
+specular 0.6 
+Primitive crosspiece_arm
+Coeff 0.1 0.1 0.8 
+Exponent 1 0.1 
+Patch 16 16 
+reflected 0.2 
+surface 1 1 1 
+gloss 0.03 
+diffuse 0.4 
+specular 0.6 
+Primitive brace
+Coeff 0.75 0.4 0.1 
+Exponent 0.1 0.1 
+Patch 20 20 
+surface 0.6 0.6 1 
+gloss 0.15 
+diffuse 0.9 
+specular 0.1 
+Primitive swivel_cylinder
+Coeff 0.8 0.8 0.4 
+Exponent 1 0.1 
+Patch 16 16 
+reflected 0.1 
+surface 0.6 0.6 1 
+gloss 0.07 
+diffuse 0.4 
+specular 0.6 
+Primitive counterweight
+Coeff 0.6 0.6 0.6 
+Exponent 0.5 0.5 
+Patch 16 16 
+surface 0.9 0.9 0.9 
+gloss 0.03 
+diffuse 0.4 
+specular 0.6 
+Primitive bottom_of_robot 
+Coeff 2 3 0.4 
+Exponent 0.1 0.1 
+Patch 16 16 
+reflected 0.1 
+surface 0.6 0.6 1 
+gloss 0.15 
+diffuse 0.9 
+specular 0.1 
+Primitive spherical_joint
+Coeff 0.3 0.3 0.3 
+Exponent 1 1 
+Patch 16 16 
+reflected 0.25 
+surface 0.7 0.7 0.7 
+gloss 0.03 
+diffuse 0.4 
+specular 0.6 
+Primitive 2nd_robot_base
+Coeff 0.9 0.9 1 
+Exponent 0.1 0.1 
+Patch 20 20 
+reflected 0.1 
+surface 0.6 0.6 1 
+gloss 0.15 
+diffuse 0.9 
+specular 0.1 
+Primitive red_sq_on_ground
+Coeff 0.4 0.4 0.3 
+Exponent 0.5 0.1 
+Patch 20 20
+surface 1 0.2 0.2 
+gloss 0.15 
+diffuse 0.9 
+specular 0.1 
+Primitive gray_floor
+Coeff 15 15 0.1 
+Exponent 0.7 0.3 
+Patch 20 20 
+reflected 0.4 
+surface 0.4 0.4 0.4 
+gloss 0.15 
+diffuse 0.9 
+specular 0.1 
+Primitive green_sq_on_floor
+Coeff 0.2 0.2 0.5 
+Exponent 1 0.1 
+Patch 20 20 
+surface 0.2 1 0.2 
+gloss 0.15 
+diffuse 0.9 
+specular 0.1 
+Primitive yellow_sq_in_robot_jaws
+Coeff 0.2 0.2 0.5 
+Exponent 0.5 0.1 
+Patch 20 20 
+surface 1 1 0 
+gloss 0.07 
+diffuse 0.7 
+specular 0.3 
+Object jaw1
+rall 1 0 0 11.4592
+ap long_part_of_jaw
+xs 0 0 0.5 
+ap short_part_of_jaw
+xs 0 0.1 1.05 
+Object jaw2
+rall 0 0 1 180
+rall 1 0 0 11.4592
+rall 0 0 1 180
+ap long_part_of_jaw
+xs 0 0 0.5 
+ap short_part_of_jaw
+xs 0 -0.1 1.05 
+Object robot_head
+rall 0 0 1 90
+rall 1 0 0 34.3775
+rall 0 0 1 -90
+ao jaw1 
+xs 0 -0.3 0.7                       
+ap elliptical_head
+xs 0 0 0.4 
+ao jaw2
+xs 0 0.3 0.7                        
+ap spherical_joint                  
+ap yellow_sq_in_robot_jaws 
+xs 0 0 2  
+rs 0 0 1 90
+rs 1 0 0 22.9183
+rs 0 0 1 -90
+Object extendable_part_of_arm 
+rall 0 0 1 90
+ao robot_head 
+xs 0 0 4                    
+ap cylindrical_part_of_arm
+xs 0 0 1.8                  
+Object robot_arm_without_crosspiece 
+rall 1 0 0 17.1887
+ao extendable_part_of_arm
+xs 0 0 0.6                  
+ap rectangular_part_of_arm  
+ap counterweight 
+xs 0 0 -2.5                 
+Object robot_arm_with_crosspiece
+rall 0 0 1 90
+rall 1 0 0 90
+rall 0 0 1 180
+ao robot_arm_without_crosspiece
+ap crosspiece_arm
+rs 0 0 1 -90
+rs 1 0 0 90
+rs 0 0 1 90
+Object robot_wo_swivel_cylinder
+ap brace left_brace 
+xs -0.5 0 -0.5                    
+ap brace right_brace 
+xs -0.5 0 0.5                     
+ao robot_arm_with_crosspiece      
+Object robot_arm_with_swivel 
+rall 0 0 1 -57.2958
+ap swivel_cylinder 
+xs 0 0 -0.3                       
+ao robot_wo_swivel_cylinder 
+xs 0 0 1  
+rs 0 0 1 90
+rs 1 0 0 90
+rs 0 0 1 -90
+Object robot_base
+ap bottom_of_robot 
+xs 0 0 -2.65          
+ap 2nd_robot_base
+xs 0 0 -1.3           
+Object robot
+ao robot_base                     
+ao robot_arm_with_swivel          
+Object floor            
+ap gray_floor         
+ap green_sq_on_floor 
+xs -3 2.5 0.55        
+ap red_sq_on_ground 
+xs 0 3.5 0.35         
+Object whole_scene
+xall 0 0 3.25  
+rall 0 0 1 155.36266
+rall 1 0 0 28.6479
+rall 0 0 1 90
+sall 0.95 0.95 0.95 
+ao floor 
+xs 0 0 -4.7                         
+ao robot 
+xs 0 -1.5 -1.5                      
+obj robot_arm_with_swivel
+obj robot_arm_wo_swivel_cylinder
+obj robot_wo_swivel_cylinder
+obj robot_arm_with_crosspiece
+obj robot_arm_without_crosspiece
+obj robot_head
+xs 1.0 0.0 0.0
+xs -0.1 0.0 0.0
+xs -0.1 0.0 0.0
+deselect
+obj whole_scene
+obj robot_wo_swivel_cylinder
+obj robot_arm_with_swivel
+xs 0 0 1.0
+xs 0.2 0 0
+xs 0.2 0 0
+xs 0.2 0 0
+xs 0.3 0 0
+xs 0.1 0 0
+obj whole_scene
+rall 0 1 0 -30
+xall 0 0 1.0
+rall 0 0 1 180
+rall 0 0 1 -90
+rall 1 0 0 -3
+rall 1 0 0 4
+rall 1 0 0 -2

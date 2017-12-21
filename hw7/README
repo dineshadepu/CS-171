@@ -1,0 +1,8 @@
+    If you don't have libpng-dev installed yet, please run:
+
+sudo apt-get install libpng-dev
+
+    If you don't have this package installed, you will most likely run into the
+following error:
+
+fatal error: png.h: No such file or directory
