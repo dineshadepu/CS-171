@@ -1,0 +1,30 @@
+111
+Frame 0
+translation -10 5 0
+scale       1 1 1
+rotation    0 0 1 0
+Frame 13
+translation -4 15 0
+scale       3 3 3
+rotation    1 1 0 265
+Frame 29
+translation 6 -7 0
+scale       2 2 2
+rotation    0 1 1 168
+Frame 43
+translation 8 9 -5
+scale       1 1 1
+rotation    0 1 0 97
+Frame 57
+translation 20 0 8
+scale       1 1 1
+rotation    0 1 0 360
+Frame 78
+translation -20 31 -10
+scale       1 1 1
+rotation    1 1 0 180
+Frame 99
+translation 0 -15 20
+scale       2 2 2
+rotation    0 1 1 270
+
