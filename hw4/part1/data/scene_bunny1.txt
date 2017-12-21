@@ -1,0 +1,22 @@
+camera:
+position 0 0 4
+orientation 0 1 0 0
+near 1
+far 10
+left -0.5
+right 0.5
+top 0.5
+bottom -0.5
+
+light 1 2 2 , 1 1 1 , 0
+
+objects:
+bunny bunny.obj
+
+bunny
+ambient 0.2 0.1 0.2
+diffuse 0.6969 0.0327293 0.626496
+specular 0.1 0.1 0.1
+shininess 0.2
+s 1 1 1
+t 0.4 -0.9 0
